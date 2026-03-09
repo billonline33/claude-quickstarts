@@ -302,16 +302,16 @@ function ChatArea() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showHeader, setShowHeader] = useState(false);
-  const [selectedModel, setSelectedModel] = useState("claude-haiku-4-5-20251001");
+  const [selectedModel, setSelectedModel] = useState(
+    "claude-haiku-4-5-20251001",
+  );
   const [showAvatar, setShowAvatar] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const [selectedKnowledgeBase, setSelectedKnowledgeBase] = useState(
-    "your-knowledge-base-id",
-  );
+  const [selectedKnowledgeBase, setSelectedKnowledgeBase] = useState("ANIML3MGPK");
 
   const knowledgeBases: KnowledgeBase[] = [
-    { id: "your-knowledge-base-id", name: "Your KB Name" },
+    { id: "ANIML3MGPK", name: "My AWS Support Docs" },
     // Add more knowledge bases as needed
   ];
 
